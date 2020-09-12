@@ -1,2 +1,2 @@
-[РЕЗЮМЕ Мондель Ж.А.](https://zhasminaM.github.io/rsschool-cv/cv)
+[РЕЗЮМЕ Мондель Ж.А.](https://github.com/zhasminaM/rsschool-cv/blob/rsschool-cv-html/index.html)
 =======
