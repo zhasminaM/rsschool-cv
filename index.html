@@ -1,130 +1,50 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-    <title>Тестовое задание/Мондель Ж.А.</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css>
-</head>
-<body>
-	
-<div class="F1_header">
-   <div> 
-<img id="company" src="image/company_name.png" alt="">
-<div id="telefon">
-	<a href="">+7(499)777-77-77</a>
-	<a href="">+7(499)777-77-77</a>
-</div>
-   </div>
-     </div>
-<div class="F2">
-	<h1 id="text_form">ФОРМА С КНОПКОЙ</h1>
- <div class="F2_form">
-    <h1>ОСТАВЬ ТЕЛЕФОН И ПОЛУЧИ ЧТО-ТО ОФИГЕННОЕ</h1>
-     <input type="tel" id="number" placeholder="Введите номер">
-     <input id="receive" type="submit" name="telefon_number" value="ПОЛУЧИТЬ" onclick="FormFunc()"><br>
- </div>
-</div>
-<h1 id="F3">ТУТ У НАС СЛАЙДЕР</h1>
+<!doctype html>
+<html>
+  <head>
+  	  <meta charset="utf-8">
+      <title>Резюме</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<img src="foto.jpg" width ="150px" height="150px" alt="foto">
+    <h1 class="name">Мондель Жасмина Александровна</h1>
+    </body>
+    <h2>Контакты</h2>
+      <ul>
+      	  <li>email: jassmina_121@mail.tu</li>
+      	  <li>telefon: +375447246627</li>
+      </ul>
+        <h2>Обо мне</h2>
+      	  <p>Изучаю программирование с 2019 года, хочу работать веб-разработчиком, для этой цели прохожу обучение в rs scool</p>
+      	<h2>Навыки:</h2>
+      	  <p>html, css, JavaScript, NodeJs, Angular</p>
+      	<h2>Пример кода</h2>
+      	  <p>
+<textarea style="margin: 5px; width: 700px; height: 80px;">
+let accessAllowed;
+let age = prompt('Сколько вам лет?', '');
 
-<div class="team">
+if (age > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
 
-      <input type="radio" name="r" id="r1">
-      <input type="radio" name="r" id="r2">
-      <input type="radio" name="r" id="r3">
-
-<div class="SlidePerson">
-<img src="image/slide_img.png" alt="">
-<img src="image/slider_img2.png" alt="">
-<img src="image/slider_img3.png" alt="">
-
-</div>
-</div>
-
-<h1 id="F4">ПРОСТО ТЕКСТОВЫЙ БЛОК</h1>
-<div id="F4-2"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1></div>
-
-<div class="F5">
-<h1>КАЛЬКУЛЯТОР<br> (СТОИМОСТЬ ПОЛЬЗОВАТЕЛЬ УЗНАЕТ ПО ТЕЛЕФОНУ)</h1>
-</div>
-<div class="window">
-	<div><div class="wind"><img src="image/wind-1.jpg" alt=""></div><h1><a href="">Одностворчатое</a></h1></div>
-	<div><div class="wind"><img src="image/wind-2.jpg" alt=""></div><h1>Двухстворчатое</h1></div>
-	<div><div class="wind"><img src="image/wind-3.jpg" alt=""></div><h1>Трехстворчатое</h1></div>
-	<div><div class="wind"><img src="image/wind-4.jpg" alt=""></div><h1>Балконный блок</h1></div>
-	<div><div class="wind"><img src="image/wind-5.jpg" alt=""></div><h1>Остеклелние балкона</h1></div>
-</div>
-
-<div class="base"> 
-<div class="block-left">
-<img src="image/wind-6.jpg" alt="">
-<div id='parameter-cont'><h1 class="parameter">ширина, см</h1><h1 class="parameter">высота, см</h1></div>
-
-<div id="sizes"> 
-<input type="number" name="wind-width" value="">  
-<h1>X</h1>
-<input type="number" name="wind-height" value="">
- </div>
-  </div>
-
-<div class="block-right">
-<h1>Одностворчатое окно КВЕ</h1><br>
-<p>1.Критерий выбора</p><br>
-<div>
-      <label for="r4"><input type="radio" name="r" id="r4">Пункт выбора 1</label>
-      <label for="r5"><input type="radio" name="r" id="r5">Пункт выбора 2</label>
-      <label for="r6"><input type="radio" name="r" id="r6">Пункт выбора 3</label>
-   </div>
-<form><p>Выберите открывание створки</p>
-   <select name="select" size="1">
-   	<option>Не открывается</option>
-	<option>Открывается</option>
-   </select>
-</form>
-</div>
-
-<div id="buttons"> 
-	<div>
- 	<i id='fa-us' class="fa fa-user" aria-hidden="true"></i>
-   <input id="numberforcalc" type="submit" name="numberforcalc" value="Введите номер"></div>
-   <input id="calcresult" type="submit" name="calcresu" value="РАССЧИТАТЬ" onclick="SomeFunc()"><br>
- </div> </div>
-<footer>
-	<p>просто<br>
-	скромный футер</p>
-</footer>
- <script type="text/javascript" src="script.js"></script> 
-</body>
-</html>
-
-<!--
-
-<div id="MySlides" class="effect">
-	<img src="slider_img.jpg" style="width: 100%" alt="">
-	</div>
-
-
-  <div class="MySlides effect">
-	<img src="slider2.jpg" style="width: 100%" alt="">
-	</div>
-
-<div class="MySlides effect">
-	<img src="slider3.webp" style="width: 100%" alt="">
-	</div>
-
-
-<a href="" class="prev" onclick="SlidePlus(-1)">&#10094</a>
-<a href="" class="next" onclick="SlidePlus(1)">&#10095</a>
-      </div>
-      <br>
-<div style="text-align: center;">
-	<span class="dots" onclick="currentSlide(1)"></span>
-	<span class="dots" onclick="currentSlide(2)"></span>
-	<span class="dots" onclick="currentSlide(3)"></span>
-</div>
-
-
--->
-
-
+alert(accessAllowed);
+</textarea>
+</p>
+<h2>Примеры работ</h2>
+  <ul>
+  	  <li>Пример проекта по СSS  <a href="https://github.com/zhasminaM/ProgectCSS-MondelJA">Проект по СSS</a></li>
+  	  <li>Практика CSS  <a href="https://github.com/AdukarIT/MondelJA/tree/master/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%20%D0%A1SS">Практика СSS</a></li>
+  </ul>
+<h2>Образование</h2>
+  <ul>
+    <li>Курсы Web-разработки адукар  <a href="Https://it-kursy.adukar.by/">Сайт Адукар</a></li>
+  <li>Курсы RS Scool  <a href=https://rs.school/>RS School</a></li>
+  </ul>
+<h2>Англицский Язык</h2>
+  <ul>
+    <li>курс школы Ешко - Уровень А2</li>
+  </ul> 
+  </html>
